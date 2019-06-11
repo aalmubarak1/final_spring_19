@@ -1,0 +1,126 @@
+@font-face{
+    font-family:'fira sans condensed bold';
+    src: url(assets/fonts/firasanscondensed_bold/FiraSansCondensed-Bold-webfont.woff);
+    font-family: 'roboto slab bold';
+    src: url(assets/fonts/robotoslab_bold/RobotoSlab-Bold-webfont.woff);
+    font-family: 'roboto slab regular';
+    src: url(assets/fonts/robotoslab_regular/RobotoSlab-Regular-webfont.woff);
+}
+
+section#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    height: 90vh;
+}
+
+div#first{
+    grid-column-start: 1;
+    grid-column-end:7;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background: url(assets/images/john-westrock-706905-unsplash.jpg);
+    background-size: cover;
+}
+h1{
+    background:pink;
+    width: 700px;
+    font-family: 'fira sans condensed bold';
+    font-size: 150px;
+    color: #014262;
+    grid-column-start:6;
+    grid-column-end:11;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+section#type{
+    grid-column-start:7;
+    grid-column-end:12;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+h4{
+    font-size: 20px;
+    font-family: 'roboto slab bold';
+    color: #014262;
+}
+p{
+    font-size: 16px;
+    font-family: 'roboto slab regular';
+    color: #4E4E4E;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+img#man{
+    grid-column-start: 6;
+    grid-column-end:8;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+img#palm{
+    grid-column-start: 8;
+    grid-column-end:10;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+img#woman{
+    grid-column-start: 10;
+    grid-column-end:12;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+@media screen and (min-width:480){
+    div#grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-gap: 10px;
+        height: 90vh;
+    }
+    div#first{
+        grid-column-start: 1;
+        grid-column-end:2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        background: url(assets/images/john-westrock-706905-unsplash.jpg);
+        background-size: cover;
+}
+h1{
+    background:pink;
+    width: 700px;
+    font-family: 'fira sans condensed bold';
+    font-size: 150px;
+    color: #014262;
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+section#type{
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+img#man{
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+img#palm{
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+img#woman{
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+}
